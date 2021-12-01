@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "Enter the value of n : "
+read num
+
+i=1
+sum=0
+
+while [ $i -le $num ]
+do
+        sum=`expr $sum + $i`
+        i=`expr $i + 2`
+done
+
+echo "sum of n odd numbers is $sum"
